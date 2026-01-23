@@ -812,7 +812,7 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.faq-question h4 {
+.faq-question h3 {
   font-size: 18px;
   font-weight: 700;
   color: var(--black);
@@ -1063,7 +1063,7 @@ body {
   .faq-accordion {
     width: 100%;
   }
-  .faq-question h4 {
+  .faq-question h3 {
     font-size: 15px;
   }
 
