@@ -111,7 +111,7 @@ img {
   border: none;
   border-radius: 10px;
   width: fit-content;
-  max-width: 53%;
+  max-width: 95%;
   margin: 10px auto 0;
   line-height: 1.2;
   display: block;
@@ -680,11 +680,18 @@ img {
 .form-input-group input {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #0069d2;
   border-radius: 5px;
   background-color: #f9f9f9;
   font-size: 16px;
   margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-input-group input:focus {
+  border-color: #0069d2;
+  box-shadow: 0 0 0 1px #0069d2;
 }
 .btn-submit-form {
   width: 100%;
@@ -1065,5 +1072,100 @@ body {
   }
   body {
     padding-bottom: 0;
+  }
+}
+
+/* Forbes Card Custom CSS */
+.forbes-card-custom {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.forbes-card-header {
+  background-color: #000;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.forbes-logo-text {
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.forbes-card-body {
+  padding: 20px;
+}
+
+.forbes-headline {
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.forbes-para {
+  font-family: var(--inter);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.forbes-subheadline {
+  font-family: var(--inter);
+  font-size: 15px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.forbes-para:last-child {
+  margin-bottom: 0;
+}
+
+.forbes-footer {
+  margin-top: 0;
+  text-align: center;
+}
+
+.forbes-footer .why-featured-label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.forbes-footer .why-news-img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Adjusting the container in Why section */
+.why-visual-card {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+@media (max-width: 480px) {
+  .forbes-logo-text {
+    font-size: 18px;
+  }
+  .forbes-card-body {
+    padding: 15px;
+  }
+  .forbes-headline {
+    font-size: 16px;
   }
 }
