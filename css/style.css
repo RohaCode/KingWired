@@ -1187,7 +1187,9 @@ body {
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .custom-modal.active {
@@ -1225,5 +1227,36 @@ body {
   color: var(--text-main);
   font-size: 1.125rem;
   font-weight: 500;
+  line-height: 1.6;
 }
 
+.legal-modal .modal-content {
+  max-width: 550px;
+  text-align: left;
+}
+
+.legal-modal .modal-text {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.legal-modal .modal-text a {
+  color: var(--primary);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.modal-btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 18px;
+}
