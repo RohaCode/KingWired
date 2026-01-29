@@ -73,9 +73,9 @@
 
           <div class="cta-block">
             <p class="hero-price">FOR ONLY $247</p>
-            <button class="btn btn-primary">
+            <a href="#get-started-form" class="btn btn-primary">
               Get published in 700+ outlets for only $247
-            </button>
+            </a>
             <p class="money-back">*100% Money Back Guarantee</p>
           </div>
 
@@ -224,9 +224,9 @@
           <h3 class="how-to-footer-text">
             After you checkout, we handle everything from A to Z!
           </h3>
-          <button class="btn btn-primary">
+          <a href="#get-started-form" class="btn btn-primary">
             Get published in 700+ outlets for only $247
-          </button>
+          </a>
           <p class="money-back">*100% Money Back Guarantee</p>
         </div>
 
@@ -408,7 +408,7 @@
           </div>
 
           <div class="checkout-right">
-            <div class="checkout-form-header">
+            <div class="checkout-form-header" id="get-started-form">
               <img src="img/rating.webp" alt="Arrow" class="form-arrow-img" />
               <img src="img/greenStars.webp" alt="Logo" class="form-logo-img" />
               <h3 class="form-instruction">
@@ -688,9 +688,9 @@
         </div>
 
         <div class="faq-footer">
-          <button class="btn btn-primary">
+          <a href="#get-started-form" class="btn btn-primary">
             Get published in 700+ outlets for only $247
-          </button>
+          </a>
           <p class="money-back">*100% Money Back Guarantee</p>
         </div>
       </div>
@@ -753,6 +753,32 @@
         <p class="modal-text" id="modalMessage">
           Thank you! Your request has been sent.
         </p>
+      </div>
+    </div>
+
+    <div id="paymentModal" class="payment-modal">
+      <div class="payment-modal-content">
+        <span class="close-payment">&times;</span>
+        <div class="payment-header">
+          <h3>Secure Payment</h3>
+          <p>Complete your purchase securely below.</p>
+        </div>
+        <div class="iframe-container">
+          <iframe
+            src="https://checkout.bepaid.by/widget/hpp.html?token=fcde7df1231c462d8fe23e550c296dbd496febf36293817005003c7adde3b485"
+            frameborder="0"
+            allowtransparency="true"
+          ></iframe>
+        </div>
+        <div class="payment-fallback">
+          <p>Don't see the payment form?</p>
+          <a
+            href="https://checkout.bepaid.by/widget/hpp.html?token=fcde7df1231c462d8fe23e550c296dbd496febf36293817005003c7adde3b485"
+            target="_blank"
+            class="btn-fallback"
+            >Click here to pay in a new window</a
+          >
+        </div>
       </div>
     </div>
 
